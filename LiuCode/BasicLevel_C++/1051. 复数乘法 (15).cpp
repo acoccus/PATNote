@@ -10,11 +10,9 @@ int main() {
         printf("0.00");
     else
         printf("%.2f", A);
-    if(B >= 0)
-        printf("+%.2fi", B);
-    else if (B + 0.005 >= 0 && B < 0)
+    if (B + 0.005 >= 0 && B < 0)
         printf("+0.00i");
     else
-        printf("%.2fi", B);
+        printf("%+.2fi", B);
     return 0;
 }
